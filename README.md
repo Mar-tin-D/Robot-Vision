@@ -27,7 +27,7 @@ This three weights influence the deformation of the cloud.
 The AIAP is a constrain of how much the original shape should be retaind.
 The Chamfer is for the deformation, to deform the source as close as possible to the target.
 Guided uses correspondences (features) between the clouds to "guide" the deformation i the right direction
-(The best results were achieved by these values AIAP_WEIGHT = 1.0e3,CHAMFER_WEIGHT=1.0e3 and GUIDED_WEIGHT=1.0e4)
+(The best results were achieved by these values AIAP_WEIGHT = 1.0e3,CHAMFER_WEIGHT=1.0e3 and GUIDED_WEIGHT= either 1.0e4 or 1.0e5)
 
 This project depends on hardcoding for the selection of the models, for the testing the model that will be tested has to "uncommented" and entered into the model.
 
