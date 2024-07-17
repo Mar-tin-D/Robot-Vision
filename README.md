@@ -6,4 +6,4 @@ It will be done in tow way, the first is the evaluation of the Chamfer distance 
 
 The first section is used for surface reconstruction, since CAD-models lack the need vertices to work with them as dense point clouds.
 This part is straight from the work "Dynamic point fields".
-
+Note: Surface_Preprocessing_for_
