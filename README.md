@@ -16,7 +16,7 @@ This is the main part of this project. At first some functions are defined (norm
 After the SIREN model and the training code the DEformation begins.
 
 ### Deformation without guidance
-Both object from before ( from the surface reconstruction) are used in the given model. 
+Both objects from before ( from the surface reconstruction) are used in the given model. 
 
 Important parameters: 
       AIAP_WEIGHT
@@ -26,13 +26,13 @@ Important parameters:
 This three weights influence the deformation of the cloud. 
 The AIAP is a constrain of how much the original shape should be retaind.
 The Chamfer is for the deformation, to deform the source as close as possible to the target.
-Guided uses correspondences (features) between the clouds to "guide" the deformation i the right direction
+Guided uses correspondences (features) between the clouds to "guide" the selected points to its "corresponding position". (This laster used in the Deformation with guidance)
 (The best results were achieved by these values AIAP_WEIGHT = 1.0e3,CHAMFER_WEIGHT=1.0e3 and GUIDED_WEIGHT= either 1.0e4 or 1.0e5)
 
 This project depends on hardcoding for the selection of the models, for the testing the model that will be tested has to "uncommented" and entered into the model.
 
 
-### Deformation withguidance
+### Deformation with guidance
 Here the selection for the model is hardcoded since the correspondences were selected manually, which means these point cloud are "preprocessed" via the Surface_Preprocessing_for_Same_Class_Deformation.ipynb and the best points were search manually. 
 
 !!! Which means these models should be used as their are and not to bee created again, since this can change the best corresponding points !!!
