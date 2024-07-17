@@ -17,10 +17,12 @@ After the SIREN model and the training code the DEformation begins.
 
 ### Deformation without guidance
 Both object from before ( from the surface reconstruction) are used in the given model. 
+
 Important parameters: 
       AIAP_WEIGHT
       CHAMFER_WEIGHT
       GUIDED_WEIGHT
+      
 This three weights influence the deformation of the cloud. 
 The AIAP is a constrain of how much the original shape should be retaind.
 The Chamfer is for the deformation, to deform the source as close as possible to the target.
@@ -31,14 +33,18 @@ This project depends on hardcoding for the selection of the models, for the test
 
 
 ### Deformation withguidance
-Here the selection for the model is hardcoded since the correspondences were selected manually, which means these point cloud are "preprocessed" via the Surface_Preprocessing_for_Same_Class_Deformation.ipynb and the best points were search manually. !!! Which means these models should be used as their are and not to bee created again, since this can change the best corresponding points !!!
+Here the selection for the model is hardcoded since the correspondences were selected manually, which means these point cloud are "preprocessed" via the Surface_Preprocessing_for_Same_Class_Deformation.ipynb and the best points were search manually. 
+
+!!! Which means these models should be used as their are and not to bee created again, since this can change the best corresponding points !!!
+
+
+This project depends on hardcoding for the selection of the models, for the testing the model that will be tested has to "uncommented" and entered into the model.
 Important parameters: 
       AIAP_WEIGHT
       CHAMFER_WEIGHT
       GUIDED_WEIGHT
 
 
-This project depends on hardcoding for the selection of the models, for the testing the model that will be tested has to "uncommented" and entered into the model.
 
 The results are plausible but the guidance training is not robust or versatile, since is uses manually picked points for the correspondance for speciic models.
 Further testing with "Neural DEscriptor Fields" is recomended.
